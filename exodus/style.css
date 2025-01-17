@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+h3, h4 {
+    color: #ffffff;
+}
+
+#textoP{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+body {
+    background-color: #e4e7e9;  /* Azul claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('img/venezuela-bg.jpg'); /* Fondo con imagen de Venezuela */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 800px;
+    background-color: rgba(49, 101, 245, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 1rem;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.671);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#tituloPrincipal {
+    background-color: none;
+}
+
+
+/* Carousel */
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Card container for comment input */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Results display */
+#result {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #d8d8d8;
+    margin-top: 20px;
+}
+
+/* Rules display */
+#rules-container {
+    margin-top: 30px;
+}
+
+#rules-container li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: 5px solid #007bff; /* Azul */
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Form input and button */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.input-container input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.input-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.input-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-container input[type="text"] {
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #ffdd00 33%, #007bff 33%, #007bff 66%, #d52b1e 66%); /* Amarillo, azul y rojo */
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer strong {
+    color: white; /* Texto en blanco para mejor legibilidad */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
